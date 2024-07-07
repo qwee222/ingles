@@ -1,3 +1,11 @@
 - pipeline: "Pipeline"
   on: "CLICK"
   fail_on_prepare_env_warning: true
+  actions:
+  - action: "GitHub Release"
+    type: "GIT_HUB_RELEASE"
+    integration: "3WPElbA5Jkj2pxzAgO6KpaN72n"
+    tag_name: "$BUDDY_EXECUTION_ID"
+    target_commitish: "$BUDDY_EXECUTION_REVISION"
+    external_project_id: "qwee222/aleman"
+    organization: "52562192"
